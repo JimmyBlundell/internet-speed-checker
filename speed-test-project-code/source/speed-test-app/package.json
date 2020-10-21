@@ -1,0 +1,23 @@
+{
+  "name": "speed-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fast-speedtest-api": "^0.3.2",
+    "mongoose": "^5.10.9",
+    "speedtest-net": "^2.1.1"
+  }
+}

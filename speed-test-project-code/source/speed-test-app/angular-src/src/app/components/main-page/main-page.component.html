@@ -1,0 +1,108 @@
+<mat-card class = "main">
+
+  
+  <br>
+  <br>
+  <mat-card-title>SpeedTest</mat-card-title>
+  <br>
+  <br>
+  <br>
+  <br>
+  <mat-card-content class = "d-flex justify-content-center">
+   
+    <button mat-button color="primary" class = "submit-button" (click)="getSpeed()">  
+    <h2>Start</h2>
+    </button>
+    <br>
+    <section class="example-section" *ngIf="waiting">
+        
+      <mat-spinner [diameter]=20 ></mat-spinner> 
+      <label class="example-margin">Getting Speed .....</label>
+    </section>
+    <!-- <button mat-button color="secondary" class = "submit-button" (click)="progreassBar()">
+      <div class="spinner" *ngIf="cancelWait">
+        <mat-spinner [diameter]=20 ></mat-spinner> 
+      </div>  
+      <h2>Cancel</h2>
+      </button> -->
+      <!-- <button mat-button color="primary" class = "submit-button" (click) = "historyAndDetails()">
+        <h2>Speed Test History and Details</h2>
+        </button> -->
+      
+  </mat-card-content>
+  <br>
+  <br>
+  <br>
+
+  <mat-card-title>Ping</mat-card-title>
+<br>
+
+<mat-card-content class = "d-flex justify-content-center">
+  
+  <mat-card-content class = "label">
+    <h3>Latency : </h3>
+    <a> {{ speedData.ping.latency}} </a>  
+  </mat-card-content>
+
+  <mat-card-content class = "label">
+    <h3>Jitter : </h3>
+    <a> {{ speedData.ping.jitter }}</a>
+  </mat-card-content>  
+
+
+</mat-card-content>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<mat-card-title>Speed</mat-card-title>
+<br>
+<mat-card-content class = "d-flex justify-content-center">
+
+  
+<ngx-gauge class = "guage"
+[type]="uploadGauge.gaugeType" 
+[size]=120
+     [value]="uploadGauge.gaugeValue" 
+     [label]="uploadGauge.gaugeLabel"  
+     [append]="uploadGauge.gaugeAppendText">
+</ngx-gauge>
+
+<ngx-gauge class = "guage"
+[type]="downloadGauge.gaugeType"
+[size]=120 
+     [value]="downloadGauge.gaugeValue" 
+     [label]="downloadGauge.gaugeLabel"  
+     [append]="downloadGauge.gaugeAppendText">
+</ngx-gauge>
+
+</mat-card-content>
+
+<br>
+
+<mat-card-content class = "d-flex justify-content-center">
+  
+  <mat-card-content class = "label">
+    <h3>Upload</h3>  
+  </mat-card-content>
+
+  <mat-card-content class = "label">
+    <h3>Download</h3>
+  </mat-card-content>
+  
+
+ 
+
+</mat-card-content>
+<br>
+
+<br>
+<br>
+<br>
+
+</mat-card>
