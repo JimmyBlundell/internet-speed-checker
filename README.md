@@ -21,3 +21,10 @@ Internet Speed Checker for Web/Mobile Dev Fall 2020
 2.
 3.
 
+# Technology
+## Web Application
+We used FireBase as our database, and an Angular front end to control the application.
+
+
+## Android Application
+Our Mobile Application uses a SQLite database with the Android core for our front end. It enables us to keep the data secure and local to the user's computer.
