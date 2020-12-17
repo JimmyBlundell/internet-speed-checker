@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Internet Speed Checker</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_pref">Pref</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_home">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_full_screen_1">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="fulscreen">ca-app-pub-3940256099942544/1033173712</string>
+</resources>
